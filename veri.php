@@ -28,7 +28,7 @@ function Delete($id)
 function Update($id, $baslik, $icerik)
 {
   global $conn;
-  $sql = "UPDATE notdefteri SET baslik = '$baslik' AND icerik = '$icerik' WHERE id = '$id'";
+  $sql = "UPDATE notdefteri SET baslik = '$baslik' , icerik = '$icerik' WHERE id = '$id'";
   $conn->query($sql);
 }
 
@@ -43,7 +43,7 @@ function GetAll()
 function Get($id)
 {
   global $conn;
-  $sql = "SELECT id, baslik icerik FROM notdefteri WHERE id = '$id'";
+  $sql = "SELECT id, baslik, icerik FROM notdefteri WHERE id = '$id'";
   $result = $conn->query($sql);
   if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {

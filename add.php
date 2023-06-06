@@ -5,7 +5,7 @@
       <input type="hidden" name="add" value="1" />
       <div class="mb-3">
         <label class="form-label">Başlık</label>
-        <input type="email" class="form-control">
+        <input type="text" name="baslik" class="form-control">
       </div>
       <div class="mb-3">
         <label class="form-label">İçerik</label>
