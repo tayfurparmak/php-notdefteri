@@ -4,6 +4,7 @@
     <table class="table">
       <thead>
         <tr>
+          <th>#</th>
           <th>Başlık</th>
           <th>İçerik</th>
           <th class="text-end">İşlemler</th>
